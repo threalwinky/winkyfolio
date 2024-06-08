@@ -40,7 +40,7 @@ const Navbar = () => {
                         </a>
                     </div>
                     <div>
-                        <a className='text-lg cursor-pointer hover:text-blue-400 max-xl:hidden'>
+                        <a href='#hobbies' className='text-lg cursor-pointer hover:text-blue-400 max-xl:hidden'>
                             Hobbies
                         </a>
                     </div>
@@ -60,7 +60,7 @@ const Navbar = () => {
                         </a>
                     </div>
                     <div>
-                        <a className='text-lg cursor-pointer hover:text-blue-400 max-xl:hidden'>
+                        <a href='#contact' className='text-lg cursor-pointer hover:text-blue-400 max-xl:hidden'>
                             Contact
                         </a>
                     </div>
@@ -99,7 +99,7 @@ const Navbar = () => {
                             </a>
                         </div>
                         <div>
-                            <a className='text-lg cursor-pointer hover:text-blue-400 '>
+                            <a href='#hobbies' className='text-lg cursor-pointer hover:text-blue-400 '>
                                 Hobbies
                             </a>
                         </div>
@@ -115,12 +115,12 @@ const Navbar = () => {
                         </div>
 
                         <div>
-                            <a href='#projects' className='text-lg cursor-pointer hover:text-blue-400 max-xl:hidden'>
+                            <a href='#projects' className='text-lg cursor-pointer hover:text-blue-400 '>
                                 Projects
                             </a>
                         </div>
                         <div>
-                            <a className='text-lg cursor-pointer hover:text-blue-400 '>
+                            <a href='#contact' className='text-lg cursor-pointer hover:text-blue-400 '>
                                 Contact
                             </a>
                         </div>

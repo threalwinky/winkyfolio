@@ -5,8 +5,22 @@
     filter: drop-shadow(0 0 15px var(--main));
 }
 .home-img:hover{
-    transform: scale(1.01); 
+    transform: scale(1.02); 
     transition-duration: 0.5s;
     /* animation-duration: 1s; */
     filter: drop-shadow(0 0 25px var(--main));
+}
+
+.home-img2{
+    transform: scale(1.01); 
+    transition-duration: 0.5s;
+    /* animation-duration: 1s; */
+    box-shadow: 0 0 20px 0.1px var(--main);
+    /* filter: box-shadow(0 0 40px var(--main)); */
+}
+.home-img2:hover{
+    transform: scale(1.01); 
+    transition-duration: 0.5s;
+    /* animation-duration: 1s; */
+    filter: drop-shadow(0 0 2px var(--main));
 }

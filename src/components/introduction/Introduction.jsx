@@ -23,9 +23,7 @@ const Introduction = () => {
                     </div>
 
                     <h1 className='text-gray-400'>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit nobis vitae accusamus aliquid numquam mollitia delectus exercitationem, tempore itaque provident totam aliquam beatae ea fuga earum enim facilis esse assumenda.
-
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit nobis vitae accusamus aliquid numquam mollitia delectus exercitationem, tempore itaque provident totam aliquam beatae ea fuga earum enim facilis esse assumenda.
+                    I am an introvert but versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.
                     </h1>
 
 
@@ -98,7 +96,7 @@ const Introduction = () => {
 
                     </div>
                     <div><a href="#about">
-                    <button className='text-black p-2 bg-blue-400 rounded-xl px-10 mt-5'>Read more !</button>
+                    <button className='text-black p-2 bg-blue-400 hover:bg-blue-500 rounded-xl px-10 mt-5'>Read more !</button>
                     </a>
                         
                     </div>

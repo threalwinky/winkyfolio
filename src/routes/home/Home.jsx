@@ -7,6 +7,8 @@ import Award from '../../components/award/Award'
 import Hobby from '../../components/hobby/Hobby'
 import Skill from '../../components/skill/Skill'
 import Project from '../../components/project/Project'
+import Contact from '../../components/contact/Contact'
+import Footer from '../../components/footer/Footer'
 
 // import './Home.css'
 
@@ -37,6 +39,8 @@ bg-gradient-to-tr
                 <Award />
                 <Skill />
                 <Project/>
+                <Contact/>
+                <Footer/>
             </div>
         </div>
     )

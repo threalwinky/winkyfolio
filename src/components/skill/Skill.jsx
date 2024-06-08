@@ -129,8 +129,12 @@ void dfs(int u){
 
 
                 </div>
-
-                <div className='p-32 max-sm:p-5 '>
+                <div className='w-full  flex items-center justify-center mt-10'>
+                <p className='text-xl px-10 text-center max-w-[40rem]'>
+                    I have "unlocked" a great number of skills during 3 years learning programming. Some of them helped me so much in my life.
+                </p>
+                </div>
+                <div className='px-32 pb-32 pt-16 max-sm:p-5 '>
                     <div className='flex flex-col max-xl:flex-col gap-5 mb-10 justify-center items-center'>
                         <div className='flex gap-5 max-lg:flex-col'>
                             <div id='pl' className=' a w-[25rem] h-[25rem] bg-slate-700 p-3 py-10 rounded-xl'>
@@ -369,9 +373,24 @@ void dfs(int u){
                         </div>
                         
                     </div> */}
-
-                    <figure><embed className='p-20 max-xl:p-0 max-h-[50rem] w-full ' src="https://wakatime.com/share/@winky/309afa32-4663-4826-a6ab-1b366564e8ca.svg"></embed></figure>
-                    <div className='px-20'>
+                    
+                    <div className='bg-transparent p-20 max-xl:p-0'>
+                        <div className='bg-slate-700 rounded-2xl'>
+                        <figure>
+                            <embed 
+                            className='p-20 max-xl:p-0 max-h-[50rem] w-full ' 
+                            src="https://wakatime.com/share/@winky/309afa32-4663-4826-a6ab-1b366564e8ca.svg">
+                                </embed>
+                                </figure>
+                        </div>
+                    
+                    </div>
+                    <div className='w-full  flex items-center justify-center mt-10'>
+                <p className='text-xl px-10 text-center max-w-[40rem]'>
+                    Feeling tough? Just put this code in your life ≧◠◡◠≦✌ 
+                </p>
+                </div>
+                    <div className='px-20 pt-10 max-xl:p-0 max-xl:py-5'>
                     <CopyBlock
                         wrapLongLines
                         text={text}

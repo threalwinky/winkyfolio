@@ -14,7 +14,7 @@ const About = () => {
             </div>
             <div id='about' className='flex  flex-row w-full items-center justify-center gap-20 max-md:flex-col pt-32 pb-40 px-32 max-md:px-10 max-md:pt-20 font-jm'>
 
-                <img src={about} alt="" className='brightness-90 max-w-[26rem] max-md:max-w-[20rem] w-full rounded-2xl' />
+                <img src={about} alt="" className=' brightness-90 max-w-[26rem] max-md:max-w-[20rem] w-full rounded-2xl home-img2 ' />
                 <div className='w-fit flex flex-col gap-5'>
                     <div className='flex flex-col gap-2'>
                         <h1 className='text-white text-3xl'>
@@ -49,7 +49,10 @@ const About = () => {
                             Personality : <span className='text-blue-400'>Quite introvert but willing to help you 🫂</span>
                         </h1>
                         <div className='items-center justify-center flex'>
-                            <button className='text-black p-2 bg-blue-400 rounded-xl px-10 mt-5'>Know more about me !</button>
+                            <a href="https://ngl.link/threalwinky">
+                            <button className='text-black p-2 bg-blue-400 rounded-xl px-10 mt-5 hover:bg-blue-500'>Know more about me !</button>
+                            </a>
+                            
                         </div>
                     </div>
 

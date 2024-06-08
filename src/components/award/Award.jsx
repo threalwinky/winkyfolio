@@ -63,17 +63,23 @@ const Award = () => {
 
     return (
         <div id='awards'>
-            <div className='flex flex-col text-white  w-full h-fit'>
+            <div className='flex flex-col text-white max-xl:mt-32  w-full h-fit'>
                 <div className='flex w-full   items-center justify-center'>
                     <h1 className='pt-32 max-sm:pt-0 text-5xl w-full text-center'>
                         Awards
                     </h1>
                 </div>
+                <div className='w-full  flex items-center justify-center mt-10'>
+                <p className='text-xl px-10 text-center max-w-[40rem]'>
+                    High school years are such great times for me to challenge myself. I have involved in many competitions and gained accomplishments.
+                </p>
+                </div>
+               
                 <div className='p-10'>
                     <Slide indicators={indicators} >
                         {awards?.map((award, id) => (
                             <div key={id} className="flex text-xl flex-col p-14 items-center">
-                                <img src={award.src} className={` bri ${"brightness-" + award.brightness}  max-w-[22rem] rounded-2xl max-md:max-w-[20rem] aspect-[9/13]`} alt="" />
+                                <img src={award.src} className={`home-img2 bri ${"brightness-" + award.brightness}  max-w-[22rem] rounded-2xl max-md:max-w-[20rem] aspect-[9/13]`} alt="" />
                                 <span className='pt-10 text-center max-w-[40rem]'>{award.description}</span>
                              
 

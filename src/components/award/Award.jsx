@@ -70,8 +70,8 @@ const Award = () => {
                     </h1>
                 </div>
                 <div className='w-full  flex items-center justify-center mt-10'>
-                <p className='text-xl px-10 text-center max-w-[40rem]'>
-                    High school years are such great times for me to challenge myself. I have involved in many competitions and gained accomplishments.
+                <p className='text-xl px-10 text-center max-w-[42rem]'>
+                    High school years are such great times for me to challenge myself. I have been involved in many competitions and attained accomplishments.
                 </p>
                 </div>
                

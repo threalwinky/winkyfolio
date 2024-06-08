@@ -7,6 +7,7 @@ import { CopyBlock } from 'react-code-blocks';
 import ReactPlayer from 'react-player'
 import './Hobby.css'
 import db from '../../firebase'
+import { motion } from 'framer-motion';
 
 import ai from '../../assets/projects/ai.jpeg'
 import cgirl from '../../assets/projects/cgirl.png'
@@ -354,14 +355,21 @@ const Hobby = () => {
         const [more, setMore] = useState(0)
         return (
             <div className=' flex flex-wrap w-full p-20 max-xl:p-2 pt-0  gap-10 justify-center items-center'>
-                <p className='text-xl px-10 text-center max-w-[40rem]'>Oh it must to say anime is my main part of life. Cuz it makes me feeling pleasant after watching  ≧°◡°≦</p>
+                <p className='text-xl px-10 text-center max-w-[40rem]'>Oh! Anime is definitely a major source of joy in my life. Watching it always lifts my spirits! Here are some of my all-time favorite animes ≧°◡°≦</p>
 
-                <div className='flex flex-wrap w-full p-20 max-xl:p-2 pt-0  gap-10 justify-center items-center'>
+                <div className='flex flex-wrap w-full p-20 max-xl:p-2  pt-0  gap-10 justify-center items-center'>
                     {(more == 0 ? animes : animesmore)?.map((project, id) => (
 
-                        <div key={id}>
-                            <div className='b p-10 flex flex-col gap-10 w-[28rem]'>
-                                <img src={project.src} className='w-[28rem] aspect-[9/12]' alt="" />
+                        <div className='' key={id}>
+                            <motion.div
+                             initial={{ y: 100, opacity: 0 }}
+                             whileInView={{ y: 0, opacity: 1 }}
+                             viewport={{once: true}}
+                             exit={{ opacity: 0, transition: { duration: 0.4 } }}
+                             transition={{ delay: 0, duration: 0.4 }}
+                            
+                            className='b p-10 flex flex-col gap -10 w-[24rem]'>
+                                <img src={project.src} classNa me=' w-[24rem] aspect-[9/12]' alt="" />
                                 {/* <div className='flex flex-wrap gap-5'>
             {project.tag?.map((pt, id2) => (
 
@@ -372,7 +380,7 @@ const Hobby = () => {
             ))}
         </div> */}
                                 <div>
-                                    <h1 className='text-3xl'>{project.name}</h1>
+                                    <h1 className='text-2xl mt-5'>{project.name}</h1>
                                     {/* <h2 className='text-lg text-slate-400'>{project.time}</h2> */}
                                     {/* <p className='text-xl text-slate-300'>{project.description}</p> */}
                                 </div>
@@ -382,7 +390,7 @@ const Hobby = () => {
             </a>
 
         </div> */}
-                            </div>
+                            </motion.div>
                         </div>
 
                     ))}
@@ -408,14 +416,26 @@ const Hobby = () => {
         return (
             <div className=' flex flex-col w-full p-20 max-xl:p-2 pt-0  gap-10 justify-center items-center'>
                 <p className='text-xl px-10 text-center max-w-[40rem]'>
-                    I listen to many kinds of music but major in EDM and Pop ^ᵔᴥᵔ^
+                I enjoy a wide variety of music, but EDM and pop hold a special place in my heart. ^ᵔᴥᵔ^
                     </p>
                 <div className='flex max-xl:flex-col max-w-[100rem] gap-5'>
-                <img src={artist} className='max-w-[25rem]' alt="" />
-                <img src={track} className='max-w-[25rem]' alt="" />
+                <motion.img initial={{ y: 100, opacity: 0 }}
+                            whileInView={{ y: 0, opacity: 1 }}
+                            viewport={{once: true}}
+                            exit={{ opacity: 0, transition: { duration: 0.4 } }}
+                            transition={{ delay: 0, duration: 0.4 }} src={artist} className='w-[28rem] max-xl:max-w-[20rem]' alt="" />
+                <motion.img initial={{ y: 100, opacity: 0 }}
+                            whileInView={{ y: 0, opacity: 1 }}
+                            viewport={{once: true}}
+                            exit={{ opacity: 0, transition: { duration: 0.4 } }}
+                            transition={{ delay: 0, duration: 0.4 }} src={track} className='w-[28rem] max-xl:max-w-[20rem]' alt="" />
                 </div>
                
-                <img src="https://spotify-recently-played-readme.vercel.app/api?user=317kafuqbev46sq43z2u3zjjbpym&unique=true" alt="" />
+                <motion.img initial={{ y: 100, opacity: 0 }}
+                            whileInView={{ y: 0, opacity: 1 }}
+                            viewport={{once: true}}
+                            exit={{ opacity: 0, transition: { duration: 0.4 } }}
+                            transition={{ delay: 0, duration: 0.8 }} src="https://spotify-recently-played-readme.vercel.app/api?user=317kafuqbev46sq43z2u3zjjbpym&unique=true" alt="" />
             </div>
         )
 
@@ -453,7 +473,15 @@ const Hobby = () => {
                     {sketchs?.map((sketch, id) => (
 
                         <div key={id}>
-                            <div><img className='home-img2 rounded-xl max-w-[20rem]' src={sketch} alt="" /></div>
+                            <motion.div
+                            initial={{ y: 100, opacity: 0 }}
+                            whileInView={{ y: 0, opacity: 1 }}
+                            viewport={{once: true}}
+                            exit={{ opacity: 0, transition: { duration: 0.4 } }}
+                            transition={{ delay: 0, duration: 0.4 }}
+                            ><img className='home-img2 rounded-xl max-w-[20rem]' src={sketch}
+                             alt="" />
+                             </motion.div>
                         </div>
 
                     ))}
@@ -517,14 +545,14 @@ const Hobby = () => {
                     <div
                         onClick={() => { setChoose(1) }}
                         className={`border-[1px] border-slate-400 text-blue-300 ${choose == 1 ? " bg-slate-900 " : "  "} p-2 px-10 max-xl:px-3 cursor-pointer rounded-ss-full rounded-es-full`}>
-                        <h1>Anime/Manga</h1>
+                        <h1>Anime</h1>
                     </div>
                     <div
                         onClick={() => { setChoose(2) }} className={`border-[1px] border-slate-400 text-blue-300  ${choose == 2 ? " bg-slate-900 " : "  "} p-2 px-10 max-xl:px-3 cursor-pointer`}>
                         <h1>Music</h1>
                     </div>
                     <div onClick={() => { setChoose(3) }} className={`border-[1px] border-slate-400 text-blue-300  ${choose == 3 ? " bg-slate-900 " : "  "} p-2 px-10 max-xl:px-3 cursor-pointer`}>
-                        <h1>Guitar/Sing</h1>
+                        <h1>Instrument</h1>
                     </div>
                     <div
                         onClick={() => { setChoose(4) }}

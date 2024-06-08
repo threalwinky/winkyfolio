@@ -3,7 +3,7 @@ import { useState, useEffect, React } from 'react'
 
 import './Skill.css'
 import { CopyBlock, nord } from 'react-code-blocks'
-
+import { motion } from 'framer-motion'
 import react from '../../assets/skills/fe/react.svg'
 import redux from '../../assets/skills/fe/redux.svg'
 import bootstrap from '../../assets/skills/fe/bootstrap.svg'
@@ -130,9 +130,10 @@ void dfs(int u){
 
                 </div>
                 <div className='w-full  flex items-center justify-center mt-10'>
-                <p className='text-xl px-10 text-center max-w-[40rem]'>
-                    I have "unlocked" a great number of skills during 3 years learning programming. Some of them helped me so much in my life.
-                </p>
+                    <p className='text-xl px-10 text-center max-w-[40rem]'>
+                        Over the past three years, my dedicated pursuit of programming knowledge has yielded a versatile skillset that has demonstrably improved my life.
+
+                    </p>
                 </div>
                 <div className='px-32 pb-32 pt-16 max-sm:p-5 '>
                     <div className='flex flex-col max-xl:flex-col gap-5 mb-10 justify-center items-center'>
@@ -373,35 +374,47 @@ void dfs(int u){
                         </div>
                         
                     </div> */}
-                    
-                    <div className='bg-transparent p-20 max-xl:p-0'>
+
+                    <motion.div   whileInView={{ y: 0, opacity: 1 }}
+                            viewport={{once: true}}
+                            exit={{ opacity: 0, transition: { duration: 0.4 } }} className='bg-transparent p-20 max-xl:p-0'>
                         <div className='bg-slate-700 rounded-2xl'>
-                        <figure>
-                            <embed 
-                            className='p-20 max-xl:p-0 max-h-[50rem] w-full ' 
-                            src="https://wakatime.com/share/@winky/309afa32-4663-4826-a6ab-1b366564e8ca.svg">
+                            <figure>
+                                <embed
+                                    className='p-20 max-xl:p-0 max-h-[50rem] w-full '
+                                    src="https://wakatime.com/share/@winky/309afa32-4663-4826-a6ab-1b366564e8ca.svg">
                                 </embed>
-                                </figure>
+                            </figure>
                         </div>
-                    
-                    </div>
-                    <div className='w-full  flex items-center justify-center mt-10'>
-                <p className='text-xl px-10 text-center max-w-[40rem]'>
-                    Feeling tough? Just put this code in your life ≧◠◡◠≦✌ 
-                </p>
-                </div>
-                    <div className='px-20 pt-10 max-xl:p-0 max-xl:py-5'>
-                    <CopyBlock
-                        wrapLongLines
-                        text={text}
-                        language={"cpp"}
-                        theme={nord}
-                        showLineNumbers={true}
-                        wrapLines
-                        className="m-56 overflow-y-scroll"
-                    />
-                    </div>
-                  
+
+                    </motion.div>
+                    <motion.div initial={{ y: 100, opacity: 0 }}
+                            whileInView={{ y: 0, opacity: 1 }}
+                            viewport={{once: true}}
+                            exit={{ opacity: 0, transition: { duration: 0.4 } }}
+                            transition={{ delay: 0, duration: 0.4 }} className='w-full  flex items-center justify-center mt-10'>
+                        <p className='text-xl px-10 text-center max-w-[40rem]'>
+                            Feeling overwhelmed?  This code will scan your life for hidden problems. It uses a powerful technique called depth first search to identify and tackle your biggest challenges!  
+
+                            ≧◠◡◠≦✌
+                        </p>
+                    </motion.div>
+                    <motion.div initial={{ y: 100, opacity: 0 }}
+                            whileInView={{ y: 0, opacity: 1 }}
+                            viewport={{once: true}}
+                            exit={{ opacity: 0, transition: { duration: 0.4 } }}
+                            transition={{ delay: 0, duration: 0.4 }} className='px-20 pt-10 max-xl:p-0 max-xl:py-5'>
+                        <CopyBlock
+                            wrapLongLines
+                            text={text}
+                            language={"cpp"}
+                            theme={nord}
+                            showLineNumbers={true}
+                            wrapLines
+                            className="m-56 overflow-y-scroll"
+                        />
+                    </motion.div>
+
 
                 </div>
             </div>

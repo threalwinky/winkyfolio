@@ -10,55 +10,55 @@ const Hobby = () => {
 
     useEffect(() => {
 
-        const unsub = onSnapshot(query(collection(db, "counter")), (doc) => {
-            getDocs(collection(db, "counter")).then((querySnapshot) => {
-                const newData = querySnapshot.docs.map((doc) => ({
-                    ...doc.data(),
-                    id: doc.id,
-                }));
+        // const unsub = onSnapshot(query(collection(db, "counter")), (doc) => {
+        //     getDocs(collection(db, "counter")).then((querySnapshot) => {
+        //         const newData = querySnapshot.docs.map((doc) => ({
+        //             ...doc.data(),
+        //             id: doc.id,
+        //         }));
     
-                // console.log(newData)
-                setCounter(newData.sort(function (a, b) {
-                    return b.time - a.time;
-                }))
-                var m = 0, cm = 0
-                for (var i of newData) {
-                    if (i.time > cm) {
-                        cm = i.time
-                        m = i.counter
-                    }
-                }
-                // addDoc(collection(db, "counter"), {
-                //     counter: m + 1,
-                //     time: Timestamp.now().seconds,
-                // })
+        //         // console.log(newData)
+        //         setCounter(newData.sort(function (a, b) {
+        //             return b.time - a.time;
+        //         }))
+        //         var m = 0, cm = 0
+        //         for (var i of newData) {
+        //             if (i.time > cm) {
+        //                 cm = i.time
+        //                 m = i.counter
+        //             }
+        //         }
+        //         addDoc(collection(db, "counter"), {
+        //             counter: m + 1,
+        //             time: Timestamp.now().seconds,
+        //         })
     
-            });
-        });
+        //     });
+        // });
 
-        getDocs(collection(db, "counter")).then((querySnapshot) => {
-            const newData = querySnapshot.docs.map((doc) => ({
-                ...doc.data(),
-                id: doc.id,
-            }));
+        // getDocs(collection(db, "counter")).then((querySnapshot) => {
+        //     const newData = querySnapshot.docs.map((doc) => ({
+        //         ...doc.data(),
+        //         id: doc.id,
+        //     }));
 
-            // console.log(newData)
-            setCounter(newData.sort(function (a, b) {
-                return b.time - a.time;
-            }))
-            var m = 0, cm = 0
-            for (var i of newData) {
-                if (i.time > cm) {
-                    cm = i.time
-                    m = i.counter
-                }
-            }
-            // addDoc(collection(db, "counter"), {
-            //     counter: m + 1,
-            //     time: Timestamp.now().seconds,
-            // })
+        //     // console.log(newData)
+        //     setCounter(newData.sort(function (a, b) {
+        //         return b.time - a.time;
+        //     }))
+        //     var m = 0, cm = 0
+        //     for (var i of newData) {
+        //         if (i.time > cm) {
+        //             cm = i.time
+        //             m = i.counter
+        //         }
+        //     }
+        //     addDoc(collection(db, "counter"), {
+        //         counter: m + 1,
+        //         time: Timestamp.now().seconds,
+        //     })
 
-        });
+        // });
 
     }, [])
 

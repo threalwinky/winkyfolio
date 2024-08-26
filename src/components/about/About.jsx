@@ -3,6 +3,7 @@ import { useState, useEffect, React } from 'react'
 
 import './About.css'
 import about from '../../assets/about.jpeg'
+import uit from '../../assets/uit.png'
 import { motion } from 'framer-motion'
 const About = () => {
 
@@ -101,7 +102,7 @@ const About = () => {
                             viewport={{ once: true }}
 
                             className='text-white text-xl'>
-                            High school : <span className='text-blue-400'>Tran Phu High School HCMC (HCMUT in the future)</span>
+                            High school : <span className='text-blue-400'>Tran Phu High School HCMC </span>
                         </motion.h1>
                         <motion.h1
                             initial={{ x: 100, opacity: 0 }}
@@ -111,7 +112,12 @@ const About = () => {
                             viewport={{ once: true }}
 
                             className='text-white text-xl'>
-                            Personality : <span className='text-blue-400'>Quite introvert but willing to help you 🫂</span>
+                            University : <span className='text-blue-400 '> 
+               
+                              
+                               VNU-HCM University of Information Technology 
+                              
+                                 </span>
                         </motion.h1>
                         <div className='items-center justify-center flex'>
                             <a href="https://ngl.link/threalwinky">

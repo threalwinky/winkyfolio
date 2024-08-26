@@ -1,0 +1,8 @@
+.t::after{
+    content: "";
+    height: 10px;
+    width: 10px;
+    display: inline-block;
+    background-size: contain;
+    background: url('/src/assets/uit.png');
+}

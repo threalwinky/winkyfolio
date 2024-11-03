@@ -37,7 +37,7 @@ const Contact = () => {
                     </h1>
                 </div>
                 <div className='justify-center items-center flex py-10 max-xl:py-10 text-xl p-5 text-center'>
-                    Feel free to reach out to me for any questions or opportunities!
+                    Feel free to reach out to me for any questions!
                 </div>
                 <div className='p-5 flex flex-col justify-center items-center w-full '>
                     <div className='flex flex-col w-[50rem] max-xl:w-96 gap-5 p-5 bg-slate-800 border-[1px] border-slate-400 rounded-xl'>

@@ -64,11 +64,11 @@ const Navbar = () => {
                             Contact
                         </a>
                     </div>
-                    <div>
+                    {/* <div>
                             <a href='/CV.png' download={true} className='text-lg cursor-pointer max-xl:hidden hover:bg-blue-500 text-slate-200 bg-blue-400 p-1 px-2 rounded-xl'>
                                  My CV
                             </a>
-                        </div>
+                        </div> */}
                 </div>
                 <Popup
                     trigger={<div className="menu-item xl:hidden text-lg cursor-pointer">     <svg
@@ -128,11 +128,11 @@ const Navbar = () => {
                                 Contact
                             </a>
                         </div>
-                        <div>
+                        {/* <div>
                             <a href='/CV.png' download={true} className='text-lg cursor-pointer hover:bg-blue-500 text-slate-200 bg-blue-400 p-1 px-2 rounded-xl'>
                                 Download my CV
                             </a>
-                        </div>
+                        </div> */}
                     </div>
                 </Popup>
             </div>

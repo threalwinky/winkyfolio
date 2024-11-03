@@ -54,7 +54,7 @@ const About = () => {
                             initial={{ x: 100, opacity: 0 }}
                             whileInView={{ x: 0, opacity: 1 }}
                             exit={{ opacity: 0, transition: { duration: 0.4 } }}
-                            transition={{ delay: 4, duration: 0.2 }}
+                            transition={{ delay: 2.5, duration: 0.2 }}
                             viewport={{ once: true }}
 
                             className='text-white text-xl '>
@@ -65,7 +65,7 @@ const About = () => {
                             initial={{ x: 100, opacity: 0 }}
                             whileInView={{ x: 0, opacity: 1 }}
                             exit={{ opacity: 0, transition: { duration: 0.4 } }}
-                            transition={{ delay: 4.5, duration: 0.2 }}
+                            transition={{ delay: 3, duration: 0.2 }}
                             viewport={{ once: true }}
 
                             className='text-white text-xl'>
@@ -76,7 +76,7 @@ const About = () => {
                             initial={{ x: 100, opacity: 0 }}
                             whileInView={{ x: 0, opacity: 1 }}
                             exit={{ opacity: 0, transition: { duration: 0.4 } }}
-                            transition={{ delay: 5, duration: 0.2 }}
+                            transition={{ delay: 3.5, duration: 0.2 }}
                             viewport={{ once: true }}
 
                             className='text-white text-xl'>
@@ -87,7 +87,7 @@ const About = () => {
                             initial={{ x: 100, opacity: 0 }}
                             whileInView={{ x: 0, opacity: 1 }}
                             exit={{ opacity: 0, transition: { duration: 0.4 } }}
-                            transition={{ delay: 5.5, duration: 0.2 }}
+                            transition={{ delay: 4, duration: 0.2 }}
                             viewport={{ once: true }}
 
                             className='text-white text-xl'>
@@ -98,7 +98,7 @@ const About = () => {
                             initial={{ x: 100, opacity: 0 }}
                             whileInView={{ x: 0, opacity: 1 }}
                             exit={{ opacity: 0, transition: { duration: 0.4 } }}
-                            transition={{ delay: 6, duration: 0.2 }}
+                            transition={{ delay: 4.5, duration: 0.2 }}
                             viewport={{ once: true }}
 
                             className='text-white text-xl'>
@@ -108,7 +108,7 @@ const About = () => {
                             initial={{ x: 100, opacity: 0 }}
                             whileInView={{ x: 0, opacity: 1 }}
                             exit={{ opacity: 0, transition: { duration: 0.4 } }}
-                            transition={{ delay: 6.5, duration: 0.2 }}
+                            transition={{ delay: 5, duration: 0.2 }}
                             viewport={{ once: true }}
 
                             className='text-white text-xl'>
@@ -120,7 +120,7 @@ const About = () => {
                                  </span>
                         </motion.h1>
                         <div className='items-center justify-center flex'>
-                            <a href="https://ngl.link/threalwinky">
+                            <a href="https://ngl.link/threalwinky30461">
                                 <motion.button
                                     initial={{ scale: 0, opacity: 0 }}
                                     whileInView={{ scale: 1, opacity: 1 }}

@@ -28,10 +28,10 @@ const Hobby = () => {
                          m = i.counter
                      }
                  }
-        //         addDoc(collection(db, "counter"), {
-        //             counter: m + 1,
-        //             time: Timestamp.now().seconds,
-        //         })
+                // addDoc(collection(db, "counter"), {
+                //     counter: m + 1,
+                //     time: Timestamp.now().seconds,
+                // })
     
              });
          });
@@ -53,10 +53,10 @@ const Hobby = () => {
                      m = i.counter
                  }
             }
-        //     addDoc(collection(db, "counter"), {
-        //         counter: m + 1,
-        //         time: Timestamp.now().seconds,
-        //     })
+            // addDoc(collection(db, "counter"), {
+            //     counter: m + 1,
+            //     time: Timestamp.now().seconds,
+            // })
 
          });
 

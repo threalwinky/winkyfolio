@@ -382,7 +382,7 @@ void dfs(int u){
                             <figure>
                                 <embed
                                     className='p-20 max-xl:p-0 max-h-[50rem] w-full '
-                                    src="https://wakatime.com/share/@winky/309afa32-4663-4826-a6ab-1b366564e8ca.svg">
+                                    src="https://wakatime.com/share/@winky/a612e988-4374-4f06-a4cf-053ae980ccb7.svg">
                                 </embed>
                             </figure>
                         </div>
